@@ -4,54 +4,20 @@ import pickle
 
 
 
-# Hide Streamlit branding and toolbar
 st.markdown("""
 <style>
-
-/* Hide top header */
-header[data-testid="stHeader"] {
-    display: none !important;
-}
-
-/* Hide toolbar */
-[data-testid="stToolbar"] {
-    display: none !important;
-}
-
-/* Hide deploy button */
-[data-testid="stDeployButton"] {
-    display: none !important;
-}
-
-/* Hide main menu */
-#MainMenu {
-    display: none !important;
-}
-
-/* Hide footer */
-footer {
-    display: none !important;
-}
-
-/* Hide decoration */
-[data-testid="stDecoration"] {
-    display: none !important;
-}
-
-/* Hide status widget */
-[data-testid="stStatusWidget"] {
-    display: none !important;
-}
-
-/* Hide bottom container */
+header[data-testid="stHeader"],
+[data-testid="stToolbar"],
+[data-testid="stDeployButton"],
+#MainMenu,
+footer,
+[data-testid="stDecoration"],
+[data-testid="stStatusWidget"],
 [data-testid="stBottom"] {
     display: none !important;
 }
-
 </style>
 """, unsafe_allow_html=True)
-
-
 
 
 
@@ -72,22 +38,6 @@ st.set_page_config(
     page_icon="⚖️",
     layout="wide"
 )
-
-/* Hide Streamlit status widget */
-[data-testid="stStatusWidget"] {
-    display: none !important;
-}
-
-/* Hide bottom-right floating controls */
-[data-testid="stBottom"] {
-    display: none !important;
-}
-
-/* Hide Streamlit footer */
-footer {
-    display: none !important;
-}
-
 
 
 # Load trained models
