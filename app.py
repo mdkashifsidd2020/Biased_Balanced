@@ -1,3 +1,40 @@
+# Hide Streamlit branding and toolbar
+st.markdown("""
+<style>
+
+/* Hide top header */
+header[data-testid="stHeader"] {
+    visibility: hidden;
+    height: 0%;
+}
+
+/* Hide toolbar */
+[data-testid="stToolbar"] {
+    display: none !important;
+}
+
+/* Hide deploy button */
+[data-testid="stDeployButton"] {
+    display: none !important;
+}
+
+/* Hide main menu */
+#MainMenu {
+    visibility: hidden;
+}
+
+/* Hide footer */
+footer {
+    visibility: hidden;
+}
+
+/* Hide decoration */
+[data-testid="stDecoration"] {
+    display: none !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 import streamlit as st
 import pandas as pd
