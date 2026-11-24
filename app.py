@@ -22,18 +22,46 @@ header[data-testid="stHeader"] {
     display: none !important;
 }
 
+st.markdown("""
+<style>
+
+/* Hide top header */
+header[data-testid="stHeader"] {
+    display: none !important;
+}
+
+/* Hide toolbar */
+[data-testid="stToolbar"] {
+    display: none !important;
+}
+
+/* Hide deploy button */
+[data-testid="stDeployButton"] {
+    display: none !important;
+}
+
 /* Hide main menu */
 #MainMenu {
-    visibility: hidden;
+    display: none !important;
 }
 
 /* Hide footer */
 footer {
-    visibility: hidden;
+    display: none !important;
 }
 
 /* Hide decoration */
 [data-testid="stDecoration"] {
+    display: none !important;
+}
+
+/* Hide status widget */
+[data-testid="stStatusWidget"] {
+    display: none !important;
+}
+
+/* Hide bottom container */
+[data-testid="stBottom"] {
     display: none !important;
 }
 
