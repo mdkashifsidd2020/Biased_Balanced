@@ -2,26 +2,9 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+
+
 # Hide Streamlit branding and toolbar
-st.markdown("""
-<style>
-
-/* Hide top header */
-header[data-testid="stHeader"] {
-    visibility: hidden;
-    height: 0%;
-}
-
-/* Hide toolbar */
-[data-testid="stToolbar"] {
-    display: none !important;
-}
-
-/* Hide deploy button */
-[data-testid="stDeployButton"] {
-    display: none !important;
-}
-
 st.markdown("""
 <style>
 
@@ -67,6 +50,11 @@ footer {
 
 </style>
 """, unsafe_allow_html=True)
+
+
+
+
+
 
 
 # Load datasets
