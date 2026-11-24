@@ -57,6 +57,23 @@ st.set_page_config(
     layout="wide"
 )
 
+/* Hide Streamlit status widget */
+[data-testid="stStatusWidget"] {
+    display: none !important;
+}
+
+/* Hide bottom-right floating controls */
+[data-testid="stBottom"] {
+    display: none !important;
+}
+
+/* Hide Streamlit footer */
+footer {
+    display: none !important;
+}
+
+
+
 # Load trained models
 with open("model/biased_model.pkl", "rb") as f:
     biased_model, biased_columns = pickle.load(f)
