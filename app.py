@@ -1,3 +1,7 @@
+import streamlit as st
+import pandas as pd
+import pickle
+
 # Hide Streamlit branding and toolbar
 st.markdown("""
 <style>
@@ -36,9 +40,6 @@ footer {
 </style>
 """, unsafe_allow_html=True)
 
-import streamlit as st
-import pandas as pd
-import pickle
 
 # Load datasets
 df_biased = pd.read_csv(
